@@ -13,6 +13,8 @@
 		AB45BC50242FB33300EC4E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB45BC4E242FB33300EC4E1E /* Main.storyboard */; };
 		AB45BC52242FB34100EC4E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB45BC51242FB34100EC4E1E /* Assets.xcassets */; };
 		AB45BC55242FB34100EC4E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB45BC53242FB34100EC4E1E /* LaunchScreen.storyboard */; };
+		ABF031FD242FB4E80095E763 /* NovaPoshta.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF031FC242FB4E80095E763 /* NovaPoshta.swift */; };
+		ABF031FF242FE9990095E763 /* CitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF031FE242FE9990095E763 /* CitiesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AB45BC51242FB34100EC4E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB45BC54242FB34100EC4E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB45BC56242FB34100EC4E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF031FC242FB4E80095E763 /* NovaPoshta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPoshta.swift; sourceTree = "<group>"; };
+		ABF031FE242FE9990095E763 /* CitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,10 @@
 				AB45BC48242FB33300EC4E1E /* AppDelegate.swift */,
 				AB45BC4A242FB33300EC4E1E /* SceneDelegate.swift */,
 				AB45BC4C242FB33300EC4E1E /* ViewController.swift */,
+				ABF031FC242FB4E80095E763 /* NovaPoshta.swift */,
 				AB45BC4E242FB33300EC4E1E /* Main.storyboard */,
 				AB45BC51242FB34100EC4E1E /* Assets.xcassets */,
+				ABF031FE242FE9990095E763 /* CitiesModel.swift */,
 				AB45BC53242FB34100EC4E1E /* LaunchScreen.storyboard */,
 				AB45BC56242FB34100EC4E1E /* Info.plist */,
 			);
@@ -140,7 +146,9 @@
 			files = (
 				AB45BC4D242FB33300EC4E1E /* ViewController.swift in Sources */,
 				AB45BC49242FB33300EC4E1E /* AppDelegate.swift in Sources */,
+				ABF031FD242FB4E80095E763 /* NovaPoshta.swift in Sources */,
 				AB45BC4B242FB33300EC4E1E /* SceneDelegate.swift in Sources */,
+				ABF031FF242FE9990095E763 /* CitiesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NovaPoshta/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NovaPoshta/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
