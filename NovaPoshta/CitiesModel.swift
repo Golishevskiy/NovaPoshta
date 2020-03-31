@@ -11,24 +11,24 @@ import Foundation
 struct Answer : Codable {
     let success : Bool
     let data : [Data]
-    let errors : [String]
-    let warnings : [String]
+//    let errors : [String]
+//    let warnings : [String]
     let info : Info
-    let messageCodes : [String]
-    let errorCodes : [String]
-    let warningCodes : [String]
-    let infoCodes : [String]
+//    let messageCodes : [String]
+//    let errorCodes : [String]
+//    let warningCodes : [String]
+//    let infoCodes : [String]
 }
 
 struct Data : Codable {
     let description : String
-    let descriptionRu : String
-    let ref : String
-    let area : String
-    let settlementType : String
-    let cityID : String
-    let settlementTypeDescriptionRu : String
-    let settlementTypeDescription : String
+    let descriptionRu : String?
+    let ref : String?
+    let area : String?
+    let settlementType : String?
+    let cityID : String?
+    let settlementTypeDescriptionRu : String?
+    let settlementTypeDescription : String?
 
     enum CodingKeys: String, CodingKey {
 

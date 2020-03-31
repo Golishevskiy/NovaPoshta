@@ -10,16 +10,17 @@ import Foundation
 
 
 class NovaPoshta {
+
+    var arary = [Any].init()
     
-    let urlString = "https://api.novaposhta.ua/v2.0/json/"
-    
-    func countCities() {
+    func countCities(currentPage: Int, complition: @escaping (Answer) -> Void) {
+        let urlString = "https://api.novaposhta.ua/v2.0/json/"
         let data: [String: Any] = [
             
             "modelName": "Address",
             "calledMethod": "getCities",
             "methodProperties": [
-                "Page" : "1",
+                "Page" : currentPage.description,
                 "Limit" : "500"
             ]
         ]
@@ -33,9 +34,38 @@ class NovaPoshta {
         let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error) in
             let answer = try? JSONDecoder().decode(Answer.self, from: data!)
-            
             guard let res = answer else { return }
-            print(res.info.totalCount)
+            complition(res)
+                        
+        }.resume()
+    }
+    
+    func loadAllCities(currentPage: Int, completion: @escaping (Cities) -> Void) {
+        let urlString = "https://api.novaposhta.ua/v2.0/json/"
+        guard let url = URL(string: urlString) else { return }
+        
+        let data: [String: Any] = [
+            "modelName": "AddressGeneral",
+            "calledMethod": "getWarehouses",
+            "methodProperties": [
+                "Page": currentPage.description,
+                "Limit": "500"
+            ],
+            "apiKey": "bde180dca59155e550084a261a90e69e"
+        ]
+        
+        let json = try? JSONSerialization.data(withJSONObject: data)
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = json
+        
+        var session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            var response = try? JSONDecoder().decode(Cities.self, from: data!)
+            print(data?.isEmpty)
+            guard let answer = response else { return }
+            completion(answer)
         }.resume()
     }
 }

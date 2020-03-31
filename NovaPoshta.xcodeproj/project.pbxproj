@@ -15,6 +15,7 @@
 		AB45BC55242FB34100EC4E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB45BC53242FB34100EC4E1E /* LaunchScreen.storyboard */; };
 		ABF031FD242FB4E80095E763 /* NovaPoshta.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF031FC242FB4E80095E763 /* NovaPoshta.swift */; };
 		ABF031FF242FE9990095E763 /* CitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF031FE242FE9990095E763 /* CitiesModel.swift */; };
+		ABF03201243204020095E763 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF03200243204020095E763 /* CityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AB45BC56242FB34100EC4E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABF031FC242FB4E80095E763 /* NovaPoshta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPoshta.swift; sourceTree = "<group>"; };
 		ABF031FE242FE9990095E763 /* CitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModel.swift; sourceTree = "<group>"; };
+		ABF03200243204020095E763 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +66,10 @@
 				AB45BC4A242FB33300EC4E1E /* SceneDelegate.swift */,
 				AB45BC4C242FB33300EC4E1E /* ViewController.swift */,
 				ABF031FC242FB4E80095E763 /* NovaPoshta.swift */,
+				ABF031FE242FE9990095E763 /* CitiesModel.swift */,
+				ABF03200243204020095E763 /* CityModel.swift */,
 				AB45BC4E242FB33300EC4E1E /* Main.storyboard */,
 				AB45BC51242FB34100EC4E1E /* Assets.xcassets */,
-				ABF031FE242FE9990095E763 /* CitiesModel.swift */,
 				AB45BC53242FB34100EC4E1E /* LaunchScreen.storyboard */,
 				AB45BC56242FB34100EC4E1E /* Info.plist */,
 			);
@@ -146,6 +149,7 @@
 			files = (
 				AB45BC4D242FB33300EC4E1E /* ViewController.swift in Sources */,
 				AB45BC49242FB33300EC4E1E /* AppDelegate.swift in Sources */,
+				ABF03201243204020095E763 /* CityModel.swift in Sources */,
 				ABF031FD242FB4E80095E763 /* NovaPoshta.swift in Sources */,
 				AB45BC4B242FB33300EC4E1E /* SceneDelegate.swift in Sources */,
 				ABF031FF242FE9990095E763 /* CitiesModel.swift in Sources */,
