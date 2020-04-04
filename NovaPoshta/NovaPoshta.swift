@@ -40,6 +40,32 @@ class NovaPoshta {
         }.resume()
     }
     
+    func getCount(complition: @escaping (String) -> Void) {
+        let urlString = "https://api.novaposhta.ua/v2.0/json/"
+            let data: [String: Any] = [
+                
+                "modelName": "Address",
+                "calledMethod": "getCities",
+                "methodProperties": [
+                    "Page" : 1,
+                    "Limit" : "1"
+                ]
+            ]
+        
+            let jsonData = try? JSONSerialization.data(withJSONObject: data)
+            guard let url = URL(string: urlString) else { return }
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.httpBody = jsonData
+            
+            let session = URLSession.shared
+            session.dataTask(with: request) { (data, response, error) in
+                let answer = try? JSONDecoder().decode(Answer.self, from: data!)
+                guard let totalCount = answer?.info.totalCount else { return }
+                complition(totalCount)
+            }.resume()
+    }
+    
     func loadAllCities(currentPage: Int, completion: @escaping (Cities) -> Void) {
         let urlString = "https://api.novaposhta.ua/v2.0/json/"
         guard let url = URL(string: urlString) else { return }

@@ -16,6 +16,7 @@
 		ABF031FD242FB4E80095E763 /* NovaPoshta.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF031FC242FB4E80095E763 /* NovaPoshta.swift */; };
 		ABF031FF242FE9990095E763 /* CitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF031FE242FE9990095E763 /* CitiesModel.swift */; };
 		ABF03201243204020095E763 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF03200243204020095E763 /* CityModel.swift */; };
+		ABF0320524391C5C0095E763 /* Asynchronus.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF0320424391C5B0095E763 /* Asynchronus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ABF031FC242FB4E80095E763 /* NovaPoshta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPoshta.swift; sourceTree = "<group>"; };
 		ABF031FE242FE9990095E763 /* CitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModel.swift; sourceTree = "<group>"; };
 		ABF03200243204020095E763 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		ABF0320424391C5B0095E763 /* Asynchronus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asynchronus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				AB45BC4C242FB33300EC4E1E /* ViewController.swift */,
 				ABF031FC242FB4E80095E763 /* NovaPoshta.swift */,
 				ABF031FE242FE9990095E763 /* CitiesModel.swift */,
+				ABF0320424391C5B0095E763 /* Asynchronus.swift */,
 				ABF03200243204020095E763 /* CityModel.swift */,
 				AB45BC4E242FB33300EC4E1E /* Main.storyboard */,
 				AB45BC51242FB34100EC4E1E /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF0320524391C5C0095E763 /* Asynchronus.swift in Sources */,
 				AB45BC4D242FB33300EC4E1E /* ViewController.swift in Sources */,
 				AB45BC49242FB33300EC4E1E /* AppDelegate.swift in Sources */,
 				ABF03201243204020095E763 /* CityModel.swift in Sources */,
