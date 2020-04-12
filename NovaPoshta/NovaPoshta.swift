@@ -13,7 +13,7 @@ class NovaPoshta {
 
     var arary = [Any].init()
     
-    func countCities(currentPage: Int, complition: @escaping (Answer) -> Void) {
+    class func countCities(currentPage: Int, complition: @escaping (Answer) -> Void) {
         let urlString = "https://api.novaposhta.ua/v2.0/json/"
         let data: [String: Any] = [
             
@@ -40,7 +40,7 @@ class NovaPoshta {
         }.resume()
     }
     
-    func getCount(complition: @escaping (String) -> Void) {
+    class func getCount(complition: @escaping (String) -> Void) {
         let urlString = "https://api.novaposhta.ua/v2.0/json/"
             let data: [String: Any] = [
                 
@@ -66,7 +66,7 @@ class NovaPoshta {
             }.resume()
     }
     
-    func loadAllCities(currentPage: Int, completion: @escaping (Cities) -> Void) {
+    class func loadAllCities(currentPage: Int, completion: @escaping (Cities) -> Void) {
         let urlString = "https://api.novaposhta.ua/v2.0/json/"
         guard let url = URL(string: urlString) else { return }
         
@@ -86,10 +86,9 @@ class NovaPoshta {
         request.httpMethod = "POST"
         request.httpBody = json
         
-        var session = URLSession.shared
+        let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error) in
-            var response = try? JSONDecoder().decode(Cities.self, from: data!)
-            print(data?.isEmpty)
+            let response = try? JSONDecoder().decode(Cities.self, from: data!)
             guard let answer = response else { return }
             completion(answer)
         }.resume()

@@ -73,7 +73,6 @@ open class AsynchronousOperation: Operation {
             finish()
             return
         }
-
         state = .executing
         execute()
     }
@@ -84,7 +83,6 @@ open class AsynchronousOperation: Operation {
     /// call `super`. The default implementation of this function throws an
     /// exception.
     open func execute() {
-        fatalError("Subclasses must implement `execute`.")
     }
 
     /// Call this function after any work is done or after a call to `cancel()`
